@@ -13,16 +13,17 @@ include "./include/header.php";
 //     // Use errorInfo() or catch exception to display error
 //     echo "Error: " . $e->getMessage();
 // }
-
-// $conn = null;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Sanitize user inputs
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $item = filter_input(INPUT_POST, 'item', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $amount = filter_input(INPUT_POST, 'amount', FILTER_VALIDATE_INT);
+}
 ?>
 
-<!-- Flex container to manage layout -->
 <div class="d-flex flex-column min-vh-100">
-
-    <!-- Main Content (Form) -->
     <div class="container flex-grow-1">
-        <!-- Card with Gradient Background -->
         <div class="gradient-card mx-auto mb-5" style="max-width: 600px;">
             <h2 class="text-center">Shopping List</h2>
             <form method="POST" action="plan.php">
@@ -45,8 +46,6 @@ include "./include/header.php";
                 <button type="submit" class="btn btn-light w-100">Submit</button>
             </form>
         </div>
-
-    <!-- Footer Section -->
     <footer class="bg-light text-center text-lg-start mt-auto">
         <div class="container p-4">
             <div class="row">

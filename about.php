@@ -6,14 +6,11 @@
     <div class="card-body text-center">
     <h1 class="mt-3">About Us</h1>
       <div class="row">
-        <!-- First image with proper fitting -->
         <div class="col-md-6 d-flex justify-content-center">
           <div style="width: 300px; height: 300px; overflow: hidden; border-radius: 50%;">
             <img src="./img/2e82f623-b43b-4c1f-9326-53fcccab9fe0.jfif" class="img-fluid" alt="Team Image 1" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
         </div>
-
-        <!-- Second image with proper fitting -->
         <div class="col-md-6 d-flex justify-content-center">
           <div style="width: 300px; height: 300px; overflow: hidden; border-radius: 50%;">
             <img src="./img/715fc0f8-3771-4910-b653-c1de9d7c085c.jfif" class="img-fluid" alt="Team Image 2" style="width: 100%; height: 100%; object-fit: cover;">
@@ -25,7 +22,7 @@
         <h5>Cristian Odiong</h5>
       </div>
       <div class="col-md-6 d-flex justify-content-center">
-        <h5>Freed Amoguis</h5>
+        <h5>Red Amoguis</h5>
       </div>
       </div>
       <p>
@@ -35,7 +32,6 @@
   </div>
 </div>
 
-<!-- Bootstrap JS (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

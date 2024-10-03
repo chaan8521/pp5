@@ -1,12 +1,11 @@
 <?php
-// Define database credentials
-define('DB_HOST', 'localhost'); // 'localhost' should be lowercase
-define('DB_USER', 'planado'); // Replace with your MySQL username
-define('DB_PASS', '123456'); // Replace with your MySQL password
-define('DB_NAME', 'items'); // The name of the database you want to use
+define('DB_HOST', 'localhost');
+define('DB_USER', 'planado');
+define('DB_PASS', '123456'); 
+define('DB_NAME', 'items'); 
 
 try {
-    // Create a PDO instance and connect to MySQL server, including the database name in the DSN
+    // Create a PDO instance and connect to MySQL 
     $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
     
     // Set the PDO error mode to exception
